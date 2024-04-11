@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        background: gray;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        padding: 16px;
+        background-color: white;
+    }
+
+    .logo_text {
+        font-weight: 700;
+    }
+
+    .container {
+        width: 400px;
+        margin-inline: auto;
+        padding-inline: 20px;;
+    }
+
+    .header_wrapper {
+        background-color: white;
+        padding: 16px;
+    }
+
+
+    .title {
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+    }
+
+    form {
+        background-color: white;
+        margin-top: 20px;
+        padding: 16px;
+    }
+
+    .select_inpute {
+        padding: 8px;
+        width: 100%;
+    }
+
+    .input_box {
+        padding: 8px;
+        width: 95%;
+    }
+
+    label {
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 4px;
+        color: rgb(71, 71, 71);
+    }
+
+    .submit_btn {
+        background-color: rgb(166, 0, 255);
+        color: white;
+        width: 100%;
+        padding: 12px;
+        border: none;
+        margin-top: 20px;
+    }
+    .pay_btn {
+        background-color: rgb(166, 0, 255);
+        color: white;
+        width: 100%;
+        padding: 12px;
+        border: none;
+    }
+
+    .student_name {
+        border: 1px solid rgb(165, 165, 243);
+        padding: 16px;
+        background: rgb(219, 219, 246);
+        margin-bottom: 20px;
+    }
+
+    .details {
+        background: white;
+        padding: 16px;
+    }
+    p{
+        margin-top: 0;
+        margin-bottom: 4px;
+    }
+</style>
+
+<body>
+
+    <section class="container">
+        <div class="header_wrapper">
+            <h1 class="title">Fees Payment</h1>
+        </div>
+        <form action="">
+            <label for="">Course</label>
+            <select class="select_inpute">
+                <option hidden>Select Course</option>
+                <option value="bca">Bachlor of Computer Science</option>
+                <option value="bba">Bachlor of Business Administration</option>
+            </select>
+            <div>
+                <label for="">Register Number</label>
+                <input type="text" class="input_box" placeholder="Enter the Reg.no">
+            </div>
+            <button type="submit" class="submit_btn">Get</button>
+        </form>
+        <div class="details">
+            <p>Student name</p>
+            <div class="student_name"></div>
+            <p>Pending Fees Details</p>
+            <div class="student_name"></div>
+            <button type="submit" class="pay_btn">Pay Fees</button>
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>
